@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Email sended</h1>
+    {% if email %}
+        <p>{{email}}</p>
+        <p>{{error}}</p>
+    {% else %}
+        <p>There are no email.</p>
+    {% endif %}
+{% endblock %}
